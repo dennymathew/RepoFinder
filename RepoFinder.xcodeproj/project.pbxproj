@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		B00B4B90215630FF0015CE90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B4B8F215630FF0015CE90 /* AppDelegate.swift */; };
-		B00B4B92215630FF0015CE90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B4B91215630FF0015CE90 /* ViewController.swift */; };
+		B00B4B92215630FF0015CE90 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B4B91215630FF0015CE90 /* HomeViewController.swift */; };
 		B00B4B95215630FF0015CE90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00B4B93215630FF0015CE90 /* Main.storyboard */; };
 		B00B4B97215631020015CE90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00B4B96215631020015CE90 /* Assets.xcassets */; };
 		B00B4B9A215631020015CE90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00B4B98215631020015CE90 /* LaunchScreen.storyboard */; };
+		B00B4BA8215638AB0015CE90 /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B4BA7215638AB0015CE90 /* RepoViewController.swift */; };
+		B00B4BAA2156392B0015CE90 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B4BA92156392B0015CE90 /* ListTableViewController.swift */; };
+		B00B4BAC21563CE30015CE90 /* RFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B4BAB21563CE30015CE90 /* RFButton.swift */; };
+		B0AE948E2156454A003FB9B8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE948D2156454A003FB9B8 /* Model.swift */; };
+		B0AE9490215646CF003FB9B8 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE948F215646CF003FB9B8 /* ApiHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B00B4B8C215630FF0015CE90 /* RepoFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00B4B8F215630FF0015CE90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B00B4B91215630FF0015CE90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B00B4B91215630FF0015CE90 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B00B4B94215630FF0015CE90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B00B4B96215631020015CE90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B00B4B99215631020015CE90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B00B4B9B215631020015CE90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00B4BA7215638AB0015CE90 /* RepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewController.swift; sourceTree = "<group>"; };
+		B00B4BA92156392B0015CE90 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		B00B4BAB21563CE30015CE90 /* RFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFButton.swift; sourceTree = "<group>"; };
+		B0AE948D2156454A003FB9B8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B0AE948F215646CF003FB9B8 /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		B00B4B8E215630FF0015CE90 /* RepoFinder */ = {
 			isa = PBXGroup;
 			children = (
+				B00B4BA4215637E80015CE90 /* Networking */,
+				B00B4BA3215637DD0015CE90 /* Controllers */,
+				B00B4BA2215637D60015CE90 /* Views */,
+				B00B4BA1215637BD0015CE90 /* Model */,
 				B00B4B8F215630FF0015CE90 /* AppDelegate.swift */,
-				B00B4B91215630FF0015CE90 /* ViewController.swift */,
 				B00B4B93215630FF0015CE90 /* Main.storyboard */,
 				B00B4B96215631020015CE90 /* Assets.xcassets */,
 				B00B4B98215631020015CE90 /* LaunchScreen.storyboard */,
 				B00B4B9B215631020015CE90 /* Info.plist */,
 			);
 			path = RepoFinder;
+			sourceTree = "<group>";
+		};
+		B00B4BA1215637BD0015CE90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0AE948D2156454A003FB9B8 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B00B4BA2215637D60015CE90 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B00B4BAB21563CE30015CE90 /* RFButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B00B4BA3215637DD0015CE90 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B00B4B91215630FF0015CE90 /* HomeViewController.swift */,
+				B00B4BA7215638AB0015CE90 /* RepoViewController.swift */,
+				B00B4BA92156392B0015CE90 /* ListTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B00B4BA4215637E80015CE90 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B0AE948F215646CF003FB9B8 /* ApiHandler.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B00B4B92215630FF0015CE90 /* ViewController.swift in Sources */,
+				B00B4BA8215638AB0015CE90 /* RepoViewController.swift in Sources */,
+				B00B4B92215630FF0015CE90 /* HomeViewController.swift in Sources */,
+				B00B4BAC21563CE30015CE90 /* RFButton.swift in Sources */,
+				B0AE948E2156454A003FB9B8 /* Model.swift in Sources */,
+				B0AE9490215646CF003FB9B8 /* ApiHandler.swift in Sources */,
 				B00B4B90215630FF0015CE90 /* AppDelegate.swift in Sources */,
+				B00B4BAA2156392B0015CE90 /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
